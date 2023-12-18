@@ -1,0 +1,26 @@
+<!-- add_item.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item</title>
+</head>
+<body>
+    <h1>Add Item</h1>
+    <form method="POST" action="/add_item">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.label(form.name) }}
+            {{ form.name(size=32) }}
+        </div>
+        <div>
+            {{ form.label(form.quantity) }}
+            {{ form.quantity(size=5) }}
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+</body>
+</html>
