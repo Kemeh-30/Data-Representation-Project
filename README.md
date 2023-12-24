@@ -59,11 +59,6 @@ Adding a New Item
 Visit http://127.0.0.1:5000/add_item to use the web interface for adding a new item.
 
 
-Development Server
-The development server is running in debug mode. Do not use it in a production deployment.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 
 This README provides clear instructions on how to set up and run the project, and it specifies the use of the `requirements.txt` file for installing dependencies.
