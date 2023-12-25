@@ -15,50 +15,56 @@ level 1.A rehash of the sample project lab I.e.:
 calls, to perform these CRUD operations
 
 
-# Flask CRUD Application
+FLASK RESTful Web Application
 
-This is a simple Flask application demonstrating CRUD (Create, Read, Update, Delete) operations with a SQLite database.
+This is a simple Flask web application with a RESTful API, utilizing Flask-RESTful for creating, updating, deleting, and retrieving items. The application also includes web pages to consume the API, allowing users to perform CRUD operations on the data.
 
-## Prerequisites
-
-- Python (version 3.6 or higher)
-- pip (Python package installer)
-
-## Setup
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Kemeh-30/Data-Representation-Project.git
-   cd Data-Representaion-Project.git
+Installation
+Clone the repository:
 
 
-Install dependencies:
+
+git clone https://github.com/Kemeh-30/Data-Representation-Project.git
+Navigate to the project directory:
+
+
+cd Representation-Project.git
+Install the required dependencies:
 
 pip install -r requirements.txt
 
 
 
-Configuration
-The SQLite database is used by default. No additional configuration is required for local development.
-Update the app.config['SQLALCHEMY_DATABASE_URI'] in App.py if you want to use a different database.
+Usage
+Run the Flask application:
 
 
-Running the Application
+python app.py
+The application will be accessible at http://127.0.0.1:5000/ in your web browser.
 
-python App.py
+Use the web pages to interact with the API:
 
-
-
-Visit http://127.0.0.1:5000/ in your web browser to access the application.
+Visit http://127.0.0.1:5000/ to view a list of items.
+Access the RESTful API endpoints:
+Individual item: http://127.0.0.1:5000/api/item/<item_id>
+Collection of items: http://127.0.0.1:5000/api/items
+Perform CRUD operations using the web pages or a tool like curl or Postman for the API.
 
 API Endpoints
-/api/items (GET and POST): Retrieve a list of items or add a new item.
-/api/items/<int:item_id> (GET, PUT, DELETE): Retrieve, update, or delete a specific item.
-Adding a New Item
-Visit http://127.0.0.1:5000/add_item to use the web interface for adding a new item.
 
 
+GET /api/item/<item_id>: Retrieve details of a specific item.
+PUT /api/item/<item_id>: Update information for a specific item.
+DELETE /api/item/<item_id>: Delete a specific item.
+GET /api/items: Retrieve a list of all items.
+POST /api/items: Create a new item.
 
 
-This README provides clear instructions on how to set up and run the project, and it specifies the use of the `requirements.txt` file for installing dependencies.
+Dependencies
+
+Flask
+Flask-WTF
+Flask-SQLAlchemy
+Flask-RESTful
+
+
