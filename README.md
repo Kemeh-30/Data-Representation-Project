@@ -44,7 +44,7 @@ The application will be accessible at http://127.0.0.1:5000/ in your web browser
 
 Use the web pages to interact with the API:
 
-Visit http://127.0.0.1:5000/ to view a list of items.
+Visit http: to view a list of items.
 Access the RESTful API endpoints:
 Individual item: http://127.0.0.1:5000/api/item/<item_id>
 Collection of items: http://127.0.0.1:5000/api/items
